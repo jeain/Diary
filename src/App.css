@@ -33,7 +33,6 @@ body {
   padding-right: 20px;
 }
 
-
 /* MyButton */
 
 .MyButton {
@@ -183,6 +182,12 @@ header button {
 
 .DiaryItem .btn_wrapper {
   min-width: 70px;
+}
+
+@media (max-width: 440px) {
+  .DiaryItem .emotion_img_wrapper {
+    min-width: 80px;
+  }
 }
 
 /* DIARY EDITOR */
@@ -342,7 +347,7 @@ header button {
   overflow-wrap: break-word;
 }
 
-.DiaryPage .diary_content_wrapper p{
+.DiaryPage .diary_content_wrapper p {
   padding: 20px;
   text-align: left;
   font-size: 20px;
@@ -351,8 +356,8 @@ header button {
   line-height: 2.5;
 }
 
-@media (max-width : 400px) {
-  .DiaryPage .diary_img_wrapper{
+@media (max-width: 400px) {
+  .DiaryPage .diary_img_wrapper {
     width: 200px;
     height: 200px;
   }

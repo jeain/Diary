@@ -14,6 +14,11 @@ const Diary = () => {
   const [data, setData] = useState();
 
   useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `JJ DIARY - 상세페이지`;
+  });
+
+  useEffect(() => {
     if (diaryList.length >= 1) {
       const targetDiary = diaryList.find(
         (it) => parseInt(it.id) === parseInt(id)
@@ -68,7 +73,7 @@ const Diary = () => {
           </section>
           <section>
             <h4>그날의 일기</h4>
-            <div className='diary_content_wrapper'>
+            <div className="diary_content_wrapper">
               <p>{data.content}</p>
             </div>
           </section>
